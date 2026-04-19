@@ -1,0 +1,8 @@
+# Request
+string action_type     # e.g., "delivery", "damage", "charge"
+uint8 target_row       # target row / aisle
+uint8 target_column    # target column / shelf
+---
+# Response
+bool success           # true if the command was accepted
+string message         # optional message, e.g., "Moving to delivery aisle 3"
